@@ -1,3 +1,20 @@
+# 从这个项目中能获得的东西
+
+
+
+- [ ] 大模型是如何与 mcp 进行交互
+  - [x]  大模型如何知道 tool 的存在及tool是何时被调用
+  - [x] 大模型如何知道 resource 的存在及resource 何时被访问
+  - [ ] 大模型如何知道 prompt 的存在及prompt如何使用
+  
+- [x] 两种mcp server的机制
+  - [x] stdio如何配置
+  - [x] sse 如何配置
+  - [x] stdio 如何转 sse
+
+
+
+
 # 一、项目介绍
 
 ## 1. 目录结构
