@@ -103,7 +103,7 @@
 
 
 
-## 1. stdio、sse、streamableHttp的区别
+## 2. stdio、sse、streamableHttp的区别
 
 [stdio 和 sse 的应用场景](https://zhuanlan.zhihu.com/p/1891623741584294739)
 
@@ -115,22 +115,20 @@ sse 是在服务器上拉取对应的代码启动一个服务
 
 
 
-## 2. 如何将stdio 转换成`sse`或`streamableHttp`服务
+## 3. 如何将stdio 转换成`sse`或`streamableHttp`服务
 
 工具：https://github.com/supercorp-ai/supergateway
 
 
 
-## 3. MCP协议现在有多个版本，
-
-
-
-
-
-
-## 3. RAG与MCP
+## 4. RAG与MCP
 
 [RAG与MCP：LLMs的“左右手”，谁才是你的菜？](https://www.51cto.com/aigc/5582.html)
+
+
+## 5. Sequential Thinking
+
+[大腦思考大不同：Sequential Thinking MCP 與推理型大模型功能實現全解析](https://most.tw/posts/blog/sequential-thinking-mcp/)
 
 
 
