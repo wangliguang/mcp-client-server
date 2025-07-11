@@ -11,7 +11,7 @@ export async function askLLM(messages, tools) {
         max_tokens: 2048,
         stream: false,
         temperature: 0.7,
-        tools: getfunctionCall(tools),
+        tools:  getfunctionCall(tools),
       },
       {
         headers: {
@@ -23,17 +23,19 @@ export async function askLLM(messages, tools) {
     );
     return res.data;
   } catch (err) {
-    let errInfo = err;
+    let errInfo = err.message;
     if (err.response.data) {
       // 参数：${err.response.config.data} 
-      errInfo = `${err.response.data}`
+      errInfo = err.response.data;
     }
-    console.error(`【client_server】大模型调用失败 \n ${errInfo}`);
     return Promise.reject(errInfo);
   }
 }
 
 function getfunctionCall(tools) {
+  if (tools && tools?.length === 0) { 
+    return null;
+  }
   return tools.map(tool => {
     return {
       type: "function",

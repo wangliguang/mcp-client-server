@@ -2,7 +2,9 @@
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { StdioClientTransport } from "@modelcontextprotocol/sdk/client/stdio.js";
 
-export async function createMcpFileSystemClient() {
+
+// 有兴趣，自己可以试试 https://www.npmjs.com/package/@modelcontextprotocol/server-github, 记得设置环境变量 token
+export async function createStdioFileSystemClient() {
   const client = new Client({
     name: "filesystem",
     version: "1.0.0",
