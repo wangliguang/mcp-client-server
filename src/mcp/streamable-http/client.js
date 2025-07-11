@@ -12,7 +12,7 @@ export async function createStreamableHttpClient() {
   const transport = new StreamableHTTPClientTransport(new URL('http://localhost:8000/sse'), {
     requestInit: {
       headers: {
-        "Authorization": "Bearer Gw0chErbpRHbSVHCvQMMmkvHBcR533EeNUrUuBy9001",
+        "Authorization": "Bearer xxx",
       }
     }
   });
