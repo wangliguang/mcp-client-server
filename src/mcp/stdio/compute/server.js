@@ -59,7 +59,6 @@ try {
   //   })
   // );
 
-  console.log('GG 333', server)
 
   server.registerTool("addNumbers",
     {
