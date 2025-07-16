@@ -58,7 +58,7 @@ while (true) {
   let answerMessage = answerInfo.choices[0].message
   prompts.push(answerMessage)
  
-  console.debug('【mcp_server】上下文', JSON.stringify(prompts));
+  console.debug('【mcp_server】上下文', prompts);
   console.debug('【mcp_server】思考中...');
   let length = answerMessage.tool_calls?.length ?? 0;
   for (let i = 0; i < length; i++) {
